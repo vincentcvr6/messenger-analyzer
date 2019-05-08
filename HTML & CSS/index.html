@@ -1,0 +1,25 @@
+<html>
+<head>
+</head>
+
+
+<body>
+<p>Choose File:</p>
+<input type="file" id="file_upload" name="a">
+<button id="file_load" onclick="getSingleFile(document.getElementById('file_upload'))">Load File</button>
+
+<p>Choose Folder:</p>
+<input type="file" id="folder_upload" webkitdirectory directory multiple name=b/>
+<button id="folder_load">Load Folder</button>
+
+<p>Graph:</p>
+<div class="container">
+    <canvas id="myChart"></canvas>
+</div>
+
+<script src=util.js></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+<script src="load.js"></script>
+
+</body>
+</html>
